@@ -24,7 +24,7 @@ class vEngine {
 
 	public function flatten($nestArray) {
 		foreach ( $nestArray as $name => $info ) {
-			$flat[$name] = $info;
+			
 		}
 
 	}
