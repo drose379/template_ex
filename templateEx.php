@@ -1,5 +1,4 @@
 <?php
-$engine = new Vengine;
 
 $__site = array(
 	'title' => 'Testing!'
