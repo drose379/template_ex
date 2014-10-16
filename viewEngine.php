@@ -16,8 +16,9 @@ class vEngine {
 
 	public function toList($array) {
 		foreach ($array as $key => $value){
-			$item = "<li>" . $value . "</li>";
+			$item[] = "<li>" . $value . "</li>";
 		}
+		return $item;
 	}
 
 	public function view() {
