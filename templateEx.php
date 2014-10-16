@@ -18,7 +18,9 @@ $HTML = <<< HTML
 <h1>$__age</h1>
 <h1>$__job</h1>
 <p>$__parg</p>
-<ul>$__list</ul>
+
+$bunch = $this->toList($__list);
+
 </body>
 </html>
 
