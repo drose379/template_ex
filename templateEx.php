@@ -16,7 +16,7 @@ $HTML = <<< HTML
 <head>
 
 <body>
-<h1></h1>
+<h1>$__age</h1>
 </body>
 </html>
 
