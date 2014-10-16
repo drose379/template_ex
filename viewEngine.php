@@ -15,7 +15,7 @@ class vEngine {
 	}
 
 	public function toList($array) {
-		foreach ($array as $key => $value){
+		foreach ($array as $value){
 			$item[] = "<li>" . $value . "</li>";
 		}
 		$bunch = implode("", $item);
@@ -23,9 +23,10 @@ class vEngine {
 	}
 
 	public function flatten($nestArray) {
-		foreach ( $nestArray as $flatArray ) {
-			$flat[] = $flatArray;
+		foreach ( $nestArray as $name => $info ) {
+			$flat[$name] = $info;
 		}
+
 	}
 
 	public function view() {

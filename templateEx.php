@@ -7,6 +7,7 @@ $__site = array(
 $ol = $this->toList($__list);
 $ol2 = $this->toList($__list2);
 
+
 $HTML = <<< HTML
 
 
@@ -25,6 +26,10 @@ $HTML = <<< HTML
 <ul>$ol</ul>
 <hr>
 <ul>$ol2</ul>
+<hr>
+
+
+
 
 </body>
 </html>
