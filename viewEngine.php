@@ -18,7 +18,7 @@ class vEngine {
 		foreach ($array as $key => $value){
 			$item[] = "<li>" . $value . "</li>";
 		}
-		$bunch = implode("\n", $item);
+		$bunch = implode("", $item);
 		return $bunch;
 	}
 

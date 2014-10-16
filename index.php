@@ -17,4 +17,8 @@ $winnersArray = array (
 
 $engine->addContent("list", $winnersArray);
 
+$otherArray = array ("Dylan","Jared");
+
+$engine->addContent("list2", $otherArray);
+
 echo $engine->view();

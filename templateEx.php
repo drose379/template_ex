@@ -4,6 +4,9 @@ $__site = array(
 	'title' => 'Testing!'
 	);
 
+$ol = $this->toList($__list);
+$ol2 = $this->toList($__list2);
+
 $HTML = <<< HTML
 
 
@@ -19,7 +22,9 @@ $HTML = <<< HTML
 <h1>$__job</h1>
 <p>$__parg</p>
 
-$bunch = $this->toList($__list);
+<ul>$ol</ul>
+<hr>
+<ul>$ol2</ul>
 
 </body>
 </html>
