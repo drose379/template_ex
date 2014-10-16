@@ -22,6 +22,12 @@ class vEngine {
 		return $bunch;
 	}
 
+	public function flatten($nestArray) {
+		foreach ( $nestArray as $flatArray ) {
+			$flat[] = $flatArray;
+		}
+	}
+
 	public function view() {
 		extract( $this->_content,EXTR_PREFIX_ALL,'_' );
 		$output = require $this->_template;
