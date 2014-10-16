@@ -23,8 +23,10 @@ class vEngine {
 	}
 
 	public function flatten($nestArray) {
-		foreach ( $nestArray as $name => $info ) {
-			
+		foreach ( $nestArray as $name => $about ) {
+		foreach ( $about as $pInfo ) {
+			$info[] = $pInfo;
+			}
 		}
 
 	}
