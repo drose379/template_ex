@@ -15,7 +15,7 @@ class vEngine {
 	}
 
 	public function view() {
-		extract( $this->_content,EXTR_PREFIX_ALL,'__' );
+		extract( $this->_content,EXTR_PREFIX_ALL,'_' );
 		ob_start();
 		$output = require $this->_template;
 		ob_end_clean();
