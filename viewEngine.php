@@ -14,11 +14,17 @@ class vEngine {
 		return true;
 	}
 
+	public function toList($array) {
+		foreach ($array as $value) {
+			return $value;
+		}
+	}
+
 	public function view() {
 		extract( $this->_content,EXTR_PREFIX_ALL,'_' );
-		ob_start();
+		//ob_start();
 		$output = require $this->_template;
-		ob_end_clean();
+		//ob_end_clean();
 		return $output;
 	}
 

@@ -17,6 +17,7 @@ $HTML = <<< HTML
 <body>
 <h1>$__age</h1>
 <h1>$__job</h1>
+<p>$__parg</p>
 </body>
 </html>
 
