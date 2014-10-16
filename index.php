@@ -14,5 +14,6 @@ $engine->toList( array (
     'hon'    => 'Billy Jo'
 ));
 
+$engine->addContent("list", $bunch);
 
 echo $engine->view();
