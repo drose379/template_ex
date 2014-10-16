@@ -15,16 +15,14 @@ class vEngine {
 	}
 
 	public function toList($array) {
-		foreach ($array as $value) {
-			return $value;
+		foreach ($array as $key => $value){
+			$item = "<li>" . $value . "</li>";
 		}
 	}
 
 	public function view() {
 		extract( $this->_content,EXTR_PREFIX_ALL,'_' );
-		//ob_start();
 		$output = require $this->_template;
-		//ob_end_clean();
 		return $output;
 	}
 
