@@ -28,7 +28,6 @@ class vEngine {
 		foreach ( $info as $attrName => $attrValue ) {
 			$whole[] = $attrName . " " . $attrValue . "<br>";
 			}
-
 		}
 		$string =  implode("<br>" , $whole);
 		return $string;
