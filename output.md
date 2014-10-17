@@ -25,6 +25,6 @@ Mallory
 
 gender female
 
-age 
+age Unknown
 
-job 
+job Unknown
