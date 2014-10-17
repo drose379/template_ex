@@ -26,7 +26,11 @@ class vEngine {
 		foreach ($nestArray as $name => $info) {
 			$whole[] = "<b>" . $name . "</b>";
 		foreach ( $info as $attrName => $attrValue ) {
-			$whole[] = $attrName . " " . $attrValue . "<br>";
+			if ($attrValue == NULL) {
+				$whole[] = $attrName . " " . "Unknown" . "<br>";
+			} else {
+				$whole[] = $attrName . " " . $attrValue . "<br>";
+			}
 			}
 		}
 		$string =  implode("<br>" , $whole);
