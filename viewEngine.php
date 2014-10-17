@@ -23,12 +23,15 @@ class vEngine {
 	}
 
 	public function flatten($nestArray) {
-		foreach ( $nestArray as $name => $about ) {
-		foreach ( $about as $pInfo ) {
-			$info[] = $pInfo;
+		foreach ($nestArray as $name => $info) {
+			$whole[] = "<b>" . $name . "</b>";
+		foreach ( $info as $attrName => $attrValue ) {
+			$whole[] = $attrName . " " . $attrValue . "<br>";
 			}
-		}
 
+		}
+		$string =  implode("<br>" , $whole);
+		return $string;
 	}
 
 	public function view() {

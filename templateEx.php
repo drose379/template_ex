@@ -7,6 +7,7 @@ $__site = array(
 $ol = $this->toList($__list);
 $ol2 = $this->toList($__list2);
 
+$test = $this->flatten($__nest);
 
 $HTML = <<< HTML
 
@@ -27,7 +28,7 @@ $HTML = <<< HTML
 <hr>
 <ul>$ol2</ul>
 <hr>
-
+$test
 
 
 

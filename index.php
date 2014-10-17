@@ -39,6 +39,6 @@ $aboutPeople = array(
     )
 );
 
-
+$engine->addContent("nest",$aboutPeople);
 
 echo $engine->view();
