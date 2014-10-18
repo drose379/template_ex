@@ -27,13 +27,13 @@ class vEngine {
 			$whole[] = "<b>" . $name . "</b>";
 		foreach ( $info as $attrName => $attrValue ) {
 			if ($attrValue == NULL) {
-				$whole[] = $attrName . " " . "Unknown" . "<br>";
+				$whole[] = "<li>" . $attrName . " " . "<i>Unknown</i>" . "</li>";
 			} else {
-				$whole[] = $attrName . " " . $attrValue . "<br>";
+				$whole[] = "<li>" . $attrName . " " . $attrValue . "</li>";
 			}
 			}
 		}
-		$string =  implode("<br>" , $whole);
+		$string =  implode($whole);
 		return $string;
 	}
 
