@@ -28,7 +28,7 @@ $HTML = <<< HTML
 <hr>
 <ul>$ol2</ul>
 <hr>
-$test
+<ul>$test</ul>
 
 
 
